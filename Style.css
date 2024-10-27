@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Inter-VariableFont_slnt;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    margin: 0;
+    font-family: Inter-Regular;
+}
+
+.All {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.border {
+    background-color: hsl(0, 0%, 12%);
+    margin: 50px;
+    padding: 90px 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.jessica, .location, .professsion {
+    color: hsl(0, 0%, 100%);
+    margin: 5px 0;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Github, .front, .LinkedIn, .Twitter, .Instagram {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Inter-VariableFont_slnt;
+}
+
+.Github:hover, .front:hover, .LinkedIn:hover, .Twitter:hover, .Instagram:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .border {
+        margin: 30px;
+        padding: 50px 40px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Github, .front, .LinkedIn, .Twitter, .Instagram {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .border {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Github, .front, .LinkedIn, .Twitter, .Instagram {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
